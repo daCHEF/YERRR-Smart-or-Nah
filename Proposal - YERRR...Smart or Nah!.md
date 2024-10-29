@@ -15,7 +15,7 @@
 
 ## Wire Frames  
 
- <img src="./Images/DCACD51E-BCEB-4E13-88CF-CEC6E9458C87_1_201_a.jpeg" alt="Mock up of 'MVP' and 'Stretch' goals' game image. Top is basic functionality; bottom is styled with effects." style="height: 500px; width: 400px; display: block; margin-left: auto; margin-right: auto;">
+ <img src="./Images/DCACD51E-BCEB-4E13-88CF-CEC6E9458C87_1_201_a.jpeg" alt="Mock up of 'MVP' and 'Stretch' goals' game image. Top is basic functionality; bottom is styled with effects." style="height: 550px; width: 500px; display: block; margin-left: auto; margin-right: auto;">
 
 
 ## User Stories
