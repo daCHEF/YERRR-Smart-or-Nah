@@ -8,23 +8,33 @@
     <title>YERRR...Smart or Nah!</title>
 </head>
 <body>
-    <header>
-        <h1>YERRR... Smart or Nah!</h1>
-        <input type="text" id="username" placeholder="State Your Name" /> <!--Welcomes user by name-->
-    </header>
-    <main id="game-container"> 
+    <main>
+        <header>
+            <h1>YERRR... Smart or Nah!</h1>
+           <input type="text" id="username" placeholder="State Your Name" /> <!--Welcomes user by name-->
+        </header>
+
+     <section id="quiz-container"> 
         
-        <div id="score-container">
+        <div id="count-container">
             <h1>Score: <span id="player-score">0</span> / 5</h1>
             <h1>Question: <span id="question-number">1</span> / 5</h1>
         </div>
         
         <div id="question-container">
-            <h1 id="question"></h1><!-- Question text (JavaScript) -->
+            <h1 id="question"><!-- Question text (JavaScript) --></h1>
         </div>
         
-        <div id="answer-options">
-            <!--Answer buttons here-->
+        <div id="options-container">
+            <button class="option" onclick="selectOption(0)" id="option0"></button>
+            <button class="option" onclick="selectOption(1)" id="option1"></button>
+            <button class="option" onclick="selectOption(2)" id="option2"></button>
+            <button class="option" onclick="selectOption(3)" id="option3"></button>
+        </div> 
+
+        <div id="controls">
+            <button id="next-button" onclick="NextQuestion()">Aight</button> <!-- (JavaScript) -->
+            <button id="restart-button" style="display: none;" onclick="restartGame()">Play Again</button> <!-- (JavaScript) -->
         </div>
         
     </main>
