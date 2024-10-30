@@ -14,29 +14,29 @@
            <input type="text" id="username" placeholder="State Your Name" /> <!--Welcomes user by name-->
         </header>
 
-     <section id="quiz-container"> 
+       <section id="quiz-container">
+           
+            <div id="count-container">
+                <h1>Score: <span id="player-score">0</span> / 10</h1>
+                <h1>Question: <span id="question-number">1</span> / 10</h1>
+            </div>
         
-        <div id="count-container">
-            <h1>Score: <span id="player-score">0</span> / 5</h1>
-            <h1>Question: <span id="question-number">1</span> / 5</h1>
-        </div>
+            <div id="question-container">
+                <h2 id="question-text"><!-- Question text (JavaScript) --></h2>
+            </div>
         
-        <div id="question-container">
-            <h1 id="question"><!-- Question text (JavaScript) --></h1>
-        </div>
-        
-        <div id="options-container">
-            <button class="option" onclick="selectOption(0)" id="option0"></button>
-            <button class="option" onclick="selectOption(1)" id="option1"></button>
-            <button class="option" onclick="selectOption(2)" id="option2"></button>
-            <button class="option" onclick="selectOption(3)" id="option3"></button>
-        </div> 
+            <div id="options-container">
+                <button class="option" onclick="selectOption(0)" id="option0" title="option 1"></button>
+                <button class="option" onclick="selectOption(1)" id="option1" title="option 2"></button>
+                <button class="option" onclick="selectOption(2)" id="option2" title="option 3"></button>
+                <button class="option" onclick="selectOption(3)" id="option3" title="option 4"></button>
+            </div> 
 
-        <div id="controls">
-            <button id="next-button" onclick="NextQuestion()">Aight</button> <!-- (JavaScript) -->
-            <button id="restart-button" style="display: none;" onclick="restartGame()">Play Again</button> <!-- (JavaScript) -->
-        </div>
-        
+            <div id="controls">
+                <button id="next-button" onclick="NextQuestion()">Aight</button> <!-- (JavaScript) -->
+                <button id="restart-button" onclick="restartGame()" title="Play Again">Play Again</button> <!-- (JavaScript) -->
+            </div>
+      </section>    
     </main>
 </body>
 </html>

@@ -3,4 +3,6 @@ body {
     background-color: rgb(235, 109, 31);
   }
   
- 
+  #restart-button {
+    display: none;
+}
