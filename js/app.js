@@ -22,7 +22,9 @@
 /*-------------- Constants -------------*/
 const questions = [
     {
-
+        text: 'When was Brooklyn founded?',
+        options: ['1765', '1804', '1636', '1592'],
+        answer: 3
     },
 ]
 
