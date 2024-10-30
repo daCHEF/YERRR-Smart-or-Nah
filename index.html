@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="./app.js"></script>
-    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./js/app.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
     <title>YERRR...Smart or Nah!</title>
 </head>
 <body>
-    
+    <header>
+        <h1>YERRR... Smart or Nah!</h1>
+        <input type="text" id="username" placeholder="State Your Name" /> <!--Welcomes user by name-->
+    </header>
+    <main id="game-container"> 
+        
+        <div id="score-container">
+            <h1>Score: <span id="player-score">0</span> / 5</h1>
+            <h1>Question: <span id="question-number">1</span> / 5</h1>
+        </div>
+        
+        <div id="question-container">
+            <h1 id="question"></h1><!-- Question text (JavaScript) -->
+        </div>
+        
+        <div id="answer-options">
+            <!--Answer buttons here-->
+        </div>
+        
+    </main>
 </body>
 </html>
