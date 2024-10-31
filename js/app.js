@@ -41,6 +41,8 @@ const optionsEl = [
     document.getElementById('option-three'),
     document.getElementById('option-four'),
 ];
+const playerScoreEl = ('player-score')
+const questionNumberEl = ('question-number') 
 
 /*-------------- Functions -------------*/
 
