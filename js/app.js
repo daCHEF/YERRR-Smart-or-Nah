@@ -34,12 +34,12 @@ let currentQuestion = 0;
 let username = '';
 
 /*----- Cached Element References  -----*/
-const questionTextEl = document.getElementById('display-question');
+const questionTextEl = document.getElementById('question-text');
 const optionsEl = [
-    document.getElementById('option-one'),
-    document.getElementById('option-two'),
-    document.getElementById('option-three'),
-    document.getElementById('option-four'),
+    document.getElementById('option0'),
+    document.getElementById('option1'),
+    document.getElementById('option2'),
+    document.getElementById('option3'),
 ];
 const playerScoreEl = ('player-score')
 const questionNumberEl = ('question-number') 
@@ -62,6 +62,8 @@ function showQuestion() {
     questionNumberEl.innerText = currentQuestion + 1;
     playerScoreEl.innerText = score;
 }
+
+
 
 /*----------- Event Listeners ----------*/
 
