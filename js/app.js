@@ -24,13 +24,13 @@ const questions = [
     {
         text: 'When was Brooklyn founded?',
         options: ['1765', '1804', '1636', '1592'],
-        answer: 3
+        answer: 2
     },
 ]
 
 /*---------- Variables (state) ---------*/
 let score = 0;
-let currentQuestionIndex = 0;
+let currentQuestion = 0;
 let username = '';
 
 /*----- Cached Element References  -----*/
@@ -45,7 +45,23 @@ const playerScoreEl = ('player-score')
 const questionNumberEl = ('question-number') 
 
 /*-------------- Functions -------------*/
+function startGame() {
+    score = 0;
+    currentQuestion = 0;
+    username = document.getElementById('username')?.value || 'My Guy';
+    showQuestion();
+}
 
+function showQuestion() {
+    const question = questions[currentQuestion];
+    questionTextEl.innerText = question.text;
+    question.options.forEach((option, index) => {
+        optionsEl[index].innerText = option;
+        optionsEl[index].style.backgroundColor = '';
+    });
+    questionNumberEl.innerText = currentQuestion + 1;
+    playerScoreEl.innerText = score;
+}
 
 /*----------- Event Listeners ----------*/
 
