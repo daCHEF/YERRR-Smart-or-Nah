@@ -34,7 +34,13 @@ let currentQuestionIndex = 0;
 let username = '';
 
 /*----- Cached Element References  -----*/
-const questionTextEl = document.getElementById('option-one')
+const questionTextEl = document.getElementById('display-question');
+const optionsEl = [
+    document.getElementById('option-one'),
+    document.getElementById('option-two'),
+    document.getElementById('option-three'),
+    document.getElementById('option-four'),
+];
 
 /*-------------- Functions -------------*/
 
