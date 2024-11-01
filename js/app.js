@@ -63,7 +63,15 @@ function showQuestion() {
     playerScoreEl.innerText = score;
 }
 
+function selectOption(optionId) {
+    clearHighlight();
+    optionsEl[optionId].classList.add('highlight');
+}
 
-
+function clearHighlight() {
+    optionsEl.forEach((option) => {
+        option.classList.remove('highlight');
+    });
+}
 /*----------- Event Listeners ----------*/
 

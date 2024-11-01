@@ -33,3 +33,7 @@ body {
   cursor: pointer;
   border-radius: 12px;
 }
+
+.highlight {
+  background-color: chartreuse;
+}
