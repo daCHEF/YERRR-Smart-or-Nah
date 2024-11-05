@@ -102,6 +102,9 @@ const questionNumberEl = document.getElementById('question-number'); //The quest
 const popupEl = document.getElementById('popup');
 const popupMessageEl = document.getElementById('popup-message');
 const closePopupBtn = document.getElementById('close-popup');
+const shuffledQuestions = shuffle(questions);
+
+
 
 
 /*-------------- Functions -------------*/
@@ -113,6 +116,15 @@ function startGame() {
     hidePopup();
 }
 
+function shuffle(questions) {
+    for (let i = questions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = questions[i];
+        questions[i] = questions[j];
+        questions[j] = temp;
+    }
+}
+
 function showQuestion() { 
     clearHighlight();
     const question = questions[currentQuestion]; //pulls from question array
@@ -121,8 +133,10 @@ function showQuestion() {
         optionsEl[index].innerText = option; //text inside option button
         optionsEl[index].style.backgroundColor = '';
     });
+    
     questionNumberEl.innerText = `Question: ${currentQuestion + 1}`; //updates question counter
     playerScoreEl.innerText = `Score: ${score}`; //updates score count
+    
 }
 
 function selectOption(optionId) {
@@ -147,7 +161,7 @@ function checkAnswer() {
 function restartGame() {
     document.getElementById('restart-button');
     startGame();
-
+    shuffle(questions);
 }
 
 function clearHighlight() {
@@ -188,7 +202,7 @@ function nextQuestion() {
 function endGame() {
     popupMessageEl.innerText = `That\'s a wrap B! ${username}, you got ${score}. NO CAP!`;
     popupEl.style.display = 'block';
-    toggleButton();
+    toggleBtn();
 }
 
 function hidePopup() {
