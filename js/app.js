@@ -144,6 +144,12 @@ function checkAnswer() {
     }
 }
 
+function restartGame() {
+    document.getElementById('restart-button');
+    startGame();
+
+}
+
 function clearHighlight() {
     optionsEl.forEach((option) => {
         option.classList.remove('highlight');
@@ -151,6 +157,16 @@ function clearHighlight() {
         option.classList.remove('wrongAnswer');
     });
 }
+
+function toggleBtn() {
+    let btn = document.getElementById('popup');
+    if (btn.style.display === 'none') {
+        btn.style.display = 'block';
+    } else {
+        btn.style.display = 'none';
+    }
+}
+
 function nextQuestion() { 
     if (userSelected < 0) {
         popupMessageEl.innerText = `Ayo ${username}, you gonna pick something?`;
@@ -172,15 +188,22 @@ function nextQuestion() {
 function endGame() {
     popupMessageEl.innerText = `That\'s a wrap B! ${username}, you got ${score}. NO CAP!`;
     popupEl.style.display = 'block';
+    toggleButton();
 }
+
 function hidePopup() {
-    popupEl.style.display = 'none';
+    document.getElementById('popup').style.display = 'none';
+}
+
+function showPopup() {
+    document.getElementById('popup').style.display = 'inline-block';
 }
 
 function playAgain() {
-    
+
 }
 
 
 /*----------- Event Listeners ----------*/
 
+document.getElementById('close-popup').addEventListener('click', toggleBtn);
