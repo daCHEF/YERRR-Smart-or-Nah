@@ -18,16 +18,17 @@ main {
 }
 
 .quiz-container {
+  align-items: center;
   display: flex;
   justify-content:center;
   text-align: justify;
 }
 
 .question-container {
+  width: fit-content;
   display: flex;
-  text-wrap: wrap;
-  height: auto;
-  max-width: fit-content
+  align-items: center;
+  justify-content: center;
 }
 
   #popup {

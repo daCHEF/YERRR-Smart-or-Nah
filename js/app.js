@@ -177,7 +177,10 @@ function hidePopup() {
     popupEl.style.display = 'none';
 }
 
-startGame();
+function playAgain() {
+    
+}
+
 
 /*----------- Event Listeners ----------*/
 
