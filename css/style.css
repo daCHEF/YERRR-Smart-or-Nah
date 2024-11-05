@@ -20,14 +20,20 @@ main {
 
 .quiz-container {
   display: flex;
-  justify-content: center;
+  justify-content:center;
+  text-align: justify;
 }
 
 .question-container {
   display: flex;
-  justify-content: center;
+  text-wrap: wrap;
   height: auto;
+  max-width: fit-content
 }
+
+  #popup {
+    display: flex;
+  }
   
   #restart-button {
     display: none;

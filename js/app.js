@@ -153,7 +153,8 @@ function clearHighlight() {
 }
 function nextQuestion() { 
     if (userSelected < 0) {
-//todo send user message
+        popupMessageEl.innerText = `Ayo ${username}, you gonna pick something?`;
+        popupEl.style.display = 'block';
         return;
     }
     clearHighlight();
@@ -162,16 +163,21 @@ function nextQuestion() {
     } else {
         optionsEl[userSelected].classList.add('wrongAnswer');
     } 
+    
+    showQuestion();
     checkAnswer();
     userSelected = -1;
-    showQuestion();
 }
 
 function endGame() {
-
+    popupMessageEl.innerText = `That\'s a wrap B! ${username}, you got ${score}. NO CAP!`;
+    popupEl.style.display = 'block';
+}
+function hidePopup() {
+    popupEl.style.display = 'none';
 }
 
-
+startGame();
 
 /*----------- Event Listeners ----------*/
 
