@@ -128,6 +128,7 @@ const popupMessageEl = document.getElementById('popup-message');
 const closePopupBtn = document.getElementById('close-popup');
 const shuffledQuestions = shuffle(questions);
 
+
 /*-------------- Functions -------------*/
 function startGame() {
   score = 0; //resets score
@@ -135,6 +136,7 @@ function startGame() {
   username = document.getElementById('username')?.value || 'My Guy'; //username field (My Guy if none)
   showQuestion(); //displays first question on start
 }
+
 
 function shuffle(questions) {
   for (let i = questions.length - 1; i > 0; i--) {
@@ -177,20 +179,6 @@ function checkAnswer() {
   }
 }
 
-function restartGame() {
-  document.getElementById('restart-button');
-  startGame();
-  shuffle(questions);
-}
-
-function clearHighlight() {
-  optionsEl.forEach((option) => {
-    option.classList.remove('highlight');
-    option.classList.remove('rightAnswer');
-    option.classList.remove('wrongAnswer');
-  });
-}
-
 function nextQuestion() {
   if (userSelected < 0) {
     popupMessageEl.innerText = `Ayo ${username}, you gonna pick something?`;
@@ -208,6 +196,21 @@ function nextQuestion() {
   showQuestion();
   userSelected = -1;
 }
+
+function restartGame() {
+  document.getElementById('restart-button');
+  startGame();
+  shuffle(questions);
+}
+
+function clearHighlight() {
+  optionsEl.forEach((option) => {
+    option.classList.remove('highlight');
+    option.classList.remove('rightAnswer');
+    option.classList.remove('wrongAnswer');
+  });
+}
+
 
 function endGame() {
   popupMessageEl.innerText = `That\'s a wrap B! ${username}, you got ${score}. NO CAP!`;
@@ -236,3 +239,5 @@ function playAgain() {}
 /*----------- Event Listeners ----------*/
 
 document.getElementById('close-popup').addEventListener('click', toggleBtn);
+
+window.onload = startGame;
