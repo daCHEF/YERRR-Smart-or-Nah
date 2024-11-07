@@ -75,3 +75,4 @@
   - YouTube: https://www.youtube.com/watch?v=1ydfKDwsYbU (PRAROZ: how to build a quiz tutorial)
   - YouTube: https://youtu.be/zX4u3SudI-0?si=VxOo6pYfP9cOe8Y- (ForrestKnight: used to help breakdown project objectives and workflow methods)
   - YouTube: https://youtu.be/8BzC1pVRTxA?si=NiqfFxzDPJbA15cH (The Coding Sloth: how to use AI correctly)
+  - Assistance from a friend who is a Full Stack Dev with 14+ years.
