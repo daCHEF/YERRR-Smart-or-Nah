@@ -69,6 +69,9 @@
   - Canvas Lectures: https://generalassembly.instructure.com/courses/573/modules
   - freeCodeCamp: https://www.freecodecamp.org/news/how-to-shuffle-an-array-of-items-using-javascript-or-typescript/
   - stackoverflow: https://stackoverflow.com/questions/68418209/javascript-how-do-disable-multiple-buttons-in-javascript-after-the-user-clicks
-  - Basedash: https://www.basedash.com/blog/init-function-in-javascript-explained
+  - Basedash: https://www.basedash.com/blog/init-function-in-javascript-explained ('init()' function)
   - DEV: https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj
   - OpenAi: https://chatgpt.com/ (to generate questions and check code for typos/errors)
+  - YouTube: https://www.youtube.com/watch?v=1ydfKDwsYbU (PRAROZ: how to build a quiz tutorial)
+  - YouTube: https://youtu.be/zX4u3SudI-0?si=VxOo6pYfP9cOe8Y- (ForrestKnight: used to help breakdown project objectives and workflow methods)
+  - YouTube: https://youtu.be/8BzC1pVRTxA?si=NiqfFxzDPJbA15cH (The Coding Sloth: how to use AI correctly)
